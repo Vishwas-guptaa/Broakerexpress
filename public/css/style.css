@@ -1,0 +1,664 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+  .h1{
+    font-family: "Inter",sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0E2E50;
+  }
+  body{
+  font-family: 'poppins';
+  }
+
+/* nav css start */
+.weblogo{
+    align-items: center;
+      font-size: 22px;
+    text-transform: uppercase;
+font-family:'prague';
+    margin-left: 25px;
+    color: #400804;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+
+  }
+  .navbar-nav li
+  {
+  padding: 0 20px;
+  }
+  .navbar-nav li a
+ {
+   color: #000e09!important;
+   font-weight: 400;
+   font-size: 21px;
+   font-family: 'poppins';
+  }
+  .navbar-nav li a:hover{
+    color:green;
+  }
+.navbar{
+    background: #ffffff;
+  }
+
+
+
+
+
+
+
+
+/* slider css start */
+
+.ch1{
+    color: rgb(3, 16, 35);
+    font-size:70px;
+    font-family:'poppins';
+    font-weight: bold;
+}
+.ph1{
+    color: black;
+    
+    font-family:sans-serif; 
+     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* slider button css */
+.carousel-control-prev
+,.carousel-control-next{
+    background-color:#198754 ;
+    color: #ffffff;
+    height: 50px;
+    width: 50px;
+    margin: 300px 40px 0px  40px;   
+    border-radius: 40px;
+   
+}
+
+/* our service css */
+
+.oh1{
+  text-align: center;
+  color: #757575;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+.big{
+  background: #e72e77;
+  color: white;
+  padding: 1px 5px;
+    border-radius: 6px;
+    border: none;
+
+}
+ /* count css start */
+
+ .count {
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-right: 3px dashed #010905;
+}
+
+.count:last-child {
+  border-right: 0px solid #010c07;
+}
+
+.counter {
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+
+i {
+  font-size: 20px !Important;
+}
+.back{
+  background: url(https://image.shutterstock.com/image-illustration/light-green-wide-banner-background-260nw-1723680721.jpg);
+
+}
+
+@media (max-width: 760px) {
+  .count {
+    border-right: 0px dashed black;
+    border-bottom: 1px dashed black;
+    width: (50% - 30px);
+    margin: auto auto;
+  }
+  
+  .count:last-child {
+    border-bottom: 0px dashed black;
+  }
+  @media (max-width: 580px) {
+    .count {
+      border-right: 0px dashed black;
+      border-bottom: 1px dashed black;
+      width: 100%;
+      margin: auto auto;
+    }
+    
+    .count:last-child {
+      border-bottom: 0px dashed black;
+    }
+}
+}
+
+.searchimgbox{
+  position: relative;
+  overflow: hidden;
+}
+.searchimgbox img{
+  max-width: 100%;
+    transition: transform 2s;
+}
+    
+
+
+
+ .imgbox{
+  position: relative;
+  overflow: hidden;
+}
+ .imgbox img{
+   max-width: 100%;
+    transition: transform 2s;
+
+}
+  img:hover{
+          transform:scale(1.1);
+}
+
+a{
+  transition: transform 2s;
+}
+
+
+ a:hover{
+  color: red;
+}
+
+
+
+
+.snav-style{
+  display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -32px;
+    margin-top: -8px;
+
+}
+.snav-item{
+      font-size: 14px;
+    font-weight: 600;
+    /* font-family: -apple-system, BlinkMacSystemFont, "Inter UI", Roboto, sans-serif; */
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #777777;
+}
+.snav-item.snav-item.active{
+      color: #e72e77;
+          font-size: 15px;
+        font-weight: 600;
+        letter-spacing: .5px;
+       text-transform: uppercase;
+
+}
+.bhh1{
+  font-size: 25px;
+  font-weight: 700;
+  color: #777777;
+  border-bottom: 2px solid #eeeeee;
+  font-family: sans-serif;
+}
+.bhh2{
+  font-size: 14px;
+  color: #444444;
+      font-weight: 500;
+    line-height: 1.25;
+    margin-top: -11px;
+}
+
+.wow{
+  border: 1px;
+  border-style: dashed;
+  color: #198754;
+  border-radius: 20px;
+  padding: 5px;
+
+}
+.card{
+  border: 1px dashed #198754;
+}
+
+
+/*Add property css start*/
+.home{
+   background-image: url(https://www.property-arena.com/admin/images/project_image/gour-city/real-estate-property-in-Gurgaon.jpg);
+    width: 100%;
+    height: 75 0px;
+    background-position: center;
+    background-size: cover;  
+}
+.property-box{
+    box-shadow: 1px 1px 7px #666;
+    padding: 10px;
+    background: #16201d5c;
+}
+
+
+/*** About ***/
+.about-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+   }
+
+.img:hover{
+          transform:scale(1.1);
+}
+
+
+/*contact css start*/
+.contact-img{
+  position: relative;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+/* footer css start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .foot_con{
+    max-width: 1170px;
+    margin: auto;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #24262b;
+    padding: 70px 0;
+  }
+  .foot_row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-family: 'poopins';
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col ul li{
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+  }
+  .footer-col .social-links a{
+      display: inline-block;
+      height: 40px;
+      width: 40px;
+      background-color: rgba(255,255,255,0.2);
+      margin: 0 10px 10px 0;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      color:ffffff;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  } 
+  .py{
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'poppons'
+  }
+  .lastfoot{
+    background: #198754;
+  }
+  
+  
+  @media(max-width:767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+  }
+  @media(max-width:574px){
+    .footer-col{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+
+/* search css start */
+
+/* body{
+	background: #fefefe;
+	font-family: Roboto;
+} */
+
+#fs_app{
+	padding: 10px 15px 0;
+}
+
+#fs_app > section:not(#fs_header_bar){
+	padding-top: 25px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #eee;
+}
+
+#fs_header_bar{
+	padding-top: 25px;
+	padding-bottom: 0;
+}
+
+#fs_page_title{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-left: -15px;
+}
+
+.heading{
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.sec{
+	width: 100%;
+	background: transparent;
+	border: 1px solid #ff286c;
+	border-radius: 2px;
+	padding: 3px;
+	color: #ff286c;
+	font-size: 14px;
+	font-weight: 300 !important;
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.active .sec{
+	background: #ff286c;
+	color: #fff;
+}
+
+#fs_price_body .line1{
+	height: 2px;
+	width: 100%;
+	background: #eee;
+}
+
+#fs_price_body .line{
+	position: absolute;
+	height: 2px;
+	width: 45%;
+	background: #ff286c;
+	left: 9%;
+}
+
+#fs_price_body .line:before{
+	position: absolute;
+	content: '';
+	display: block;
+	height: 6px;
+	width: 6px;
+	background: #ff286c;
+	border-radius: 50%;
+	left: -2px;
+	top: -2px;
+}
+
+#fs_price_body .line:after{
+	position: absolute;
+	content: '';
+	display: block;
+	height: 6px;
+	width: 6px;
+	background: #ff286c;
+	border-radius: 50%;
+	right: -2px;
+	bottom: -2px;
+}
+
+#fs_price_body ul{
+	padding: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+
+#fs_price_body ul li{
+	list-style: none;
+	display: inline-block;
+	color: #d4d4d4;
+}
+
+#fs_price_body ul li:last-child{
+	float: right;
+}
+
+#fs_distance_body ul{
+	padding: 0;
+	display: block;
+	margin-top: 15px;
+}
+
+#fs_distance_body ul li{
+	list-style: none;
+	margin-bottom: 18px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#fs_distance_body .text-right{
+	float: right;
+	height: 13px;
+	width: 13px;
+	border: 1px solid #999;
+	margin-top: 3px;
+}
+
+#fs_distance_body li.active span:first-child{
+	color: #ff286c;
+}
+
+#fs_distance_body li.active span:last-child{
+	background: #ff286c;
+	color: #fff;
+	border: 1px solid #ff286c;
+	font-size: 10px;
+	line-height: 100%;
+	text-align: center;
+}
+
+#fs_time_body ul{
+	padding: 0;
+	display: block;
+	margin-top: 15px;
+}
+
+#fs_time_body ul li{
+	list-style: none;
+	margin-bottom: 18px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#fs_time_body .text-right{
+	float: right;
+	height: 13px;
+	width: 13px;
+	border: 1px solid #999;
+	margin-top: 3px;
+}
+
+#fs_time_body li.active span:first-child{
+	color: #ff286c;
+}
+
+#fs_time_body li.active span:last-child{
+	background: #ff286c;
+	color: #fff;
+	border: 1px solid #ff286c;
+	line-height: 100%;
+	text-align: center;
+	font-size: 10px;
+}
+
+#fs_rating ul{
+	padding: 0;
+	display: block;
+	margin-top: 15px;
+}
+
+#fs_rating ul li{
+	list-style: none;
+	margin-bottom: 18px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#fs_rating .text-right{
+	float: right;
+	height: 13px;
+	width: 13px;
+	border: 1px solid #999;
+	margin-top: 3px;
+}
+
+#fs_rating i{
+	color: #eee;
+}
+
+#fs_rating i.dark{
+	color: #000;
+}
+
+#fs_rating{
+	border: none !important;
+}
+
+
+
+/* search css end */
+
+
+
+  
+  /* footer css end */
+
+
+
+
+
+
+@media(max-width:468px){
+    .weblogo{
+        
+         font-size: 15px;
+    }
+}
+@media(max-width:290px){
+    .weblogo{
+        text-align: center;
+         font-size: 11px;
+       
+        
+    }
+    
+}
+@media(max-width:260px){
+    .weblogo{
+        
+         font-size: 8px;
+        
+       
+        
+    }
+    
+}
+@media(max-width:188px){
+    .weblogo{
+         font-size: 5px;
+        
+    }
+    
+}
+
+@media(max-width:300px){
+    .weblogo{
+        text-align: center;
+         
+        
+        
+    }
+    
+}
+
+
+@media(max-width:900px){
+    .ch1{
+        
+         font-size: 50px;
+    }
+    .ph1{
+        font-size: 18;
+    }
+}
+@media(max-width:650px){
+    .ch1{
+        
+         font-size: 40px;
+    }
+    .ph1{
+        font-size: 16px;
+    }
+}
+@media(max-width:530px){
+    .ch1{
+        
+         font-size: 30px;
+    }
+}
+@media(max-width:300px){
+    .ch1{
+        
+         font-size: 20px;
+
+    }
+    .ph1{
+        font-size: 11px;
+    }
+}

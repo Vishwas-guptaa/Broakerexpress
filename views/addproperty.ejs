@@ -1,0 +1,77 @@
+<%- include('./header.ejs') %>
+
+<div class="container-fluid  home">
+
+  <br/>
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1 class="mt-4 text-center text-white">
+        <span>ADD YOUR PROPERTY FOR SALE OR RENT! </span>
+      </h1>
+
+      <div class="col-md-6">
+        
+        <div class="property-box">
+          <form action="" class="bg-transparent border-1" method="">
+            <select class="form-select border-3 mt-3 py-1">
+              <option selected>Select property For</option>
+              <option value="1">Rent</option>
+              <option value="1">Sale</option>
+            </select>
+
+            <label class="text-white">Add Property image</label> <br />
+            <input
+              type="file"
+              name="prpertyimage"
+              class="form-control-file text-white"
+              placeholder=""
+            />
+            <input
+              type="text"
+              name="Propertytype"
+              class="form-control mt-4"
+              placeholder="Enter Property type"
+            />
+            <input
+              type="text"
+              name="Building Name"
+              class="form-control mt-4"
+              placeholder="Building Name"
+            />
+            <input
+              type="text"
+              name="Price"
+              class="form-control mt-4"
+              placeholder="Price"
+            />
+
+            <input
+              type="text"
+              name="location"
+              class="form-control mt-4"
+              placeholder="Location"
+            />
+            <input
+              type="text"
+              name="area"
+              class="form-control mt-4"
+              placeholder="Size of Property in square feet"
+            />
+            <input
+              type="text"
+              name="facilities"
+              class="form-control mt-4"
+              placeholder="Enter facilities"
+            />
+          </form>
+          <div class="text-center">
+            <button class="btn btn-success mt-4">Add Property</button>
+          </div>
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('./footer.ejs') %>

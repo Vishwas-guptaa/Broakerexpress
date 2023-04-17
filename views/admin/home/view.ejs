@@ -1,0 +1,37 @@
+<%-include('../../admin/sidebar.ejs') %> <%- include('../../admin/header.ejs')
+%>
+
+<br />
+<div class="container mt-5">
+  <div class="row">
+    <h1 class="pt-4 pb-3">Slider View</h1>
+
+    <table class="table table-bordered text-center">
+      <thead class="text-white bg-success">
+        <th>ID No.</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Image</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><%= view._id %></td>
+          <td><%= view.title %></td>
+          <td><%= view.description %></td>
+
+          <td>
+            <img
+              src="<%= view.image.url %> "
+              width="300px"
+              height="250px"
+              alt=""
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- row end-->
+</div>
+<!-- container fluid end-->
+<br /><br />

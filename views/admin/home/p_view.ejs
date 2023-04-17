@@ -1,0 +1,73 @@
+<%-include('../../admin/sidebar.ejs') %> <%- include('../../admin/header.ejs')
+%>
+
+<br />
+<div class="content mt-3">
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <strong class="card-title text-success"
+                >Property Details Table</strong
+              >
+            </div>
+          </div>
+          <div class="card-body">
+            <table
+              id="bootstrap-data-table-export"
+              class="table table-striped table-bordered"
+            >
+              <thead class="text-white bg-success">
+                <tr>
+                  <th>Flatname</th>
+                  <th>Type</th>
+                  <th>Prize</th>
+                  <th>Location</th>
+                  <th>Flat for</th>
+                  <th>Area</th>
+                  <th>Bath</th>
+                  <th>Facility</th>
+                  <th>Status</th>
+                  <th>Image</th>
+                  <th>All Image</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><%= pview.flatname %></td>
+                  <td><%= pview.type %></td>
+                  <td><%= pview.prize %></td>
+                  <td><%= pview.location %></td>
+                  <td><%= pview.flatfor %></td>
+                  <td><%= pview.area %></td>
+                  <td><%= pview.bath %></td>
+                  <td><%= pview.facility %></td>
+                  <td><%= pview.status %></td>
+
+                  <td>
+                    <img
+                      src="<%= pview.f_image.url %> "
+                      width="300px"
+                      height="250px"
+                      alt=""
+                    />
+                  </td>
+                  <td>
+                    <% pview.all_image.forEach((imageshow)=>{ %>
+                    <img src="<%= imageshow.url %>" width="100px" />
+                    <% }) %>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- row end-->
+  </div>
+</div>
+<!-- container fluid end-->
+<br /><br />
