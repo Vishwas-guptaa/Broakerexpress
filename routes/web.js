@@ -21,6 +21,7 @@ router.get('/login',FrontController.login)
 router.get('/register',auth,FrontController.register)
 
 
+
 //admin controller
 router.get('/admin/dashboard',auth,AdminController.dashboard)
 router.post('/adminregister',auth,AdminController.register)
