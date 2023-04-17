@@ -44,7 +44,7 @@ router.get('/admin/toppropertyview/:id/:hgf',auth,PropertyController.propertyvie
 router.get('/admin/toppropertyview/:id/:ghgh/:yugh',auth,PropertyController.propertyview)
 
 //Book controller
-router.post('/insertbook/:id',auth,Bookcontroller.bookproperty)
+router.post('/insertbook/:id',Bookcontroller.bookproperty)
 router.get('/admin/readmore/read',auth,Bookcontroller.readmore)
 router.get('/admin/bookdelete/:id',auth,Bookcontroller.bookdelete)
 
