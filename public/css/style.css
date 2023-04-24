@@ -662,3 +662,28 @@ a{
         font-size: 11px;
     }
 }
+
+@media(max-width:768px){
+  .search{
+   text-align: center;
+   padding: 3px;
+
+
+  
+      
+       
+
+
+  }
+  .ph1{
+      font-size: 11px;
+  }
+}
+
+
+/* @media (max-width :348){
+  .imagebox{
+    position: absolute;
+    top: 0%;
+  }
+} */

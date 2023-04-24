@@ -19,6 +19,8 @@ router.get('/details/:id',FrontController.detail)
 router.post('/search',FrontController.searching)
 router.get('/login',FrontController.login)
 router.get('/register',auth,FrontController.register)
+router.get('/readmore',FrontController.readmoreabout)
+
 
 
 
@@ -27,6 +29,10 @@ router.get('/admin/dashboard',auth,AdminController.dashboard)
 router.post('/adminregister',auth,AdminController.register)
 router.post('/verifylogin',AdminController.verifylogin)
 router.get('/logout',AdminController.logout)
+router.get('/changepassword',auth,AdminController.changepassword)
+router.post('/adminchangepassword',auth,AdminController.updatepassword)
+
+
 //Slider controler
 router.get('/admin/homeslider',auth,SliderController.slider)
 router.post('/insertslider', auth,SliderController.insertslider)
@@ -47,6 +53,7 @@ router.get('/admin/toppropertyview/:id/:ghgh/:yugh',auth,PropertyController.prop
 router.post('/insertbook/:id',Bookcontroller.bookproperty)
 router.get('/admin/readmore/read',auth,Bookcontroller.readmore)
 router.get('/admin/bookdelete/:id',auth,Bookcontroller.bookdelete)
+
 
  
 module.exports = router

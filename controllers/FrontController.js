@@ -15,6 +15,7 @@ class FrontController {
   static about = (req, res) => {
     res.render("about");
   };
+
   static property = async (req, res) => {
     const result = await PropertyModel.find();
 
@@ -23,6 +24,7 @@ class FrontController {
   static contact = (req, res) => {
     res.render("contact");
   };
+
   static addproperty = (req, res) => {
     res.render("addproperty");
   };
@@ -31,9 +33,9 @@ class FrontController {
     try {
       const result = await PropertyModel.findById(req.params.id);
 
-      res.render("details", { p:result , message: req.flash('Sucess')})
+      res.render("details", { p:result ,message: req.flash('Sucess')})
       //console.log(result);
-      res.render("search")
+     
     } catch (error) {
       console.log(error);
     }
@@ -62,18 +64,29 @@ class FrontController {
 
 
 
+  static readmoreabout = async(req,res) =>{
+    try{
+           res.render('about/readmore')
+    }catch(error){
+      console.log(error)
+    }
+            
+  }
+
+  
+
+
+
   static searching =async (req,res) =>{
    try{
         const data=req.body.search
         // console.log(data)
         if(data){
           const search_data = await PropertyModel.find({"location":{ $regex:data}})
-           //console.log(search_data)
+          // console.log(search_data)
            res.render('search',{users:search_data})
         }
         
-
-
    }catch(error){
     console.log(error)
    }
