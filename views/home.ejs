@@ -14,14 +14,14 @@
     <% }) %> 
     
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
-  </button>
+  </button> -->
 </div>
 
   <!-------------------------------------------- search start------------------------------------------------- -->
@@ -177,7 +177,7 @@
                 <div class="imgbox">
                     <a href="/details/<%- item._id %>"><img class="img-fluid" src="<%= item.f_image.url %> " style="width: 500px;height: 250px;"   alt=""></a>
                     <div class="bg-success rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3"><%= item.flatfor %></div>
-                    <div class="bg-success rounded text-white position-absolute end-0 top-0 m-4 py-0 px-3">
+                    <div class="bg-success rounded text-white position-absolute end-0 bottom-0 m-4 py-0 px-1">
                     <a class="btn btn-success" href=""><%= item.status %></a>
                   </div>
                     <div class="bg-white rounded-top text-success position-absolute start-0 bottom-0 mx-4 pt-1 px-3"><%= item.type %></div>
