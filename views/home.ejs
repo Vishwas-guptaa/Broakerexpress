@@ -5,23 +5,16 @@
   <div class="carousel-inner">
     <% d.forEach((item)=>{ %>
       <div class="carousel-item active">
-        <img src="<%= item.image.url %>" class="d-block w-100 "style="height: 575px;" alt="...">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 style="font-size: 40px;font-weight: bold;" class="text-success"><%= item.title %></h1>
-          <p style="font-size: 30px; font-weight: 800; " class="text-primary"><%= item.description %></p>
+        <img src="<%= item.image.url %>" class="d-block w-100 "style="height: 570px;" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h1 style="font-size: 40px;font-weight: bold;font-family: 'poppins';" class="text-white"><%= item.title %></h1>
+          <p style="font-size: 30px; font-weight: 800;font-family: 'poppins';color: rgb(64, 7, 234); "><%= item.description %></p>
         </div>
       </div>
     <% }) %> 
     
   </div>
-  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button> -->
+ 
 </div>
 
   <!-------------------------------------------- search start------------------------------------------------- -->
