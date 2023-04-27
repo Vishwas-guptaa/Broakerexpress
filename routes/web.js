@@ -6,6 +6,7 @@ const  Router  = require("express");
 const SliderController = require("../controllers/admin/SliderController");
 const PropertyController = require("../controllers/admin/PropertyController");
 const Bookcontroller = require("../controllers/admin/BookController");
+const ContactController = require("../controllers/admin/ContactController")
 const auth = require('../middleware/auth')
 
 
@@ -54,7 +55,10 @@ router.post('/insertbook/:id',Bookcontroller.bookproperty)
 router.get('/admin/readmore/read',auth,Bookcontroller.readmore)
 router.get('/admin/bookdelete/:id',auth,Bookcontroller.bookdelete)
 
-
+//contact controller
+router.post('/bookappointment',ContactController.appointment)
+router.get('/user/appointment',ContactController.appointmentdisplay)
+router.get('/user/appointment/delete/:id',ContactController.appointmentdelete)
  
 module.exports = router
 

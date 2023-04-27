@@ -1,0 +1,59 @@
+<%-include('../../admin/sidebar.ejs')  %>
+<%- include('../../admin/header.ejs')  %>
+
+
+<br />
+<div class="content mt-3">
+  <div class="animated fadeIn">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between">
+            <div>
+              <strong class="card-title text-success"
+                >Appointment Book Detail Table</strong
+              >
+            </div>
+          </div>
+          <div class="card-body">
+            <table
+              id="bootstrap-data-table-export"
+              class="table table-striped table-bordered"
+            >
+              <thead class="text-white bg-success">
+                <tr>
+                  <th>FirstName</th>
+                  <th>LastName</th>
+                  <th>Email</th>
+                  <th>Mobile</th>
+                  <th>First Time Visit</th>
+                  <th>Appointment Date</th>
+                  <th>Action</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <% contact.forEach((item)=>{ %>
+                <tr>
+                  <td><%= item.firstname %></td>
+                  <td><%= item.lastname %></td>
+                  <td><%= item.email %></td>
+                  <td><%= item.mobile %></td>
+                  <td><%= item.visit %></td> 
+                  <td><%= item.date %></td>   
+                  <td> <a href="/user/appointment/delete/<%= item._id %>" class="btn btn-danger">Delete</a></td>
+              </tr>
+
+              
+              <% }) %>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- row end-->
+  </div>
+</div>
+<!-- container fluid end-->
+<br /><br />

@@ -36,7 +36,7 @@ class SliderController {
       });
 
       await result.save();
-      console.log(result);
+     // console.log(result);
       res.redirect("/admin/homeslider");
     } catch (error) {
       console.log(error);

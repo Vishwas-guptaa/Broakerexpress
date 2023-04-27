@@ -271,95 +271,74 @@ a{
 }
 
 /* footer css start */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .foot_con{
-    max-width: 1170px;
-    margin: auto;
-  }
-  ul{
-    list-style: none;
-  }
-  .footer{
-    background-color: #24262b;
-    padding: 70px 0;
-  }
-  .foot_row{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .footer-col{
-    width: 25%;
-    padding: 0 15px;
-  
-  }
-  .footer-col h4{
-    font-size: 18px;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 35px;
-    font-family: 'poopins';
-    font-weight: 500;
-    position: relative;
-  }
-  .footer-col ul li{
-    margin-bottom: 10px;
-  }
-  .footer-col ul li a{
-    font-size: 16px;
-    text-transform: uppercase;
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 300;
-    color: #bbbbbb;
-    display: block;
-  }
-  .footer-col ul li a:hover{
-    color: #ffffff;
-    padding-left: 10px;
-  }
-  .footer-col .social-links a{
-      display: inline-block;
-      height: 40px;
-      width: 40px;
-      background-color: rgba(255,255,255,0.2);
-      margin: 0 10px 10px 0;
-      text-align: center;
-      line-height: 40px;
-      border-radius: 50%;
-      text-align: center;
-      color:ffffff;
-  }
-  .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
-  } 
-  .py{
-    font-size: 20px;
-    color: white;
-    letter-spacing: 2px;
-    font-family: 'poppons'
-  }
-  .lastfoot{
-    background: #198754;
-  }
-  
-  
-  @media(max-width:767px){
-    .footer-col{
-      width: 50%;
-      margin-bottom: 30px;
-    }
-  }
-  @media(max-width:574px){
-    .footer-col{
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  }
+/*** Footer ***/
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: seagreen;
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color:rgb(222, 250, 234);
+  border-color: rgb(62, 203, 83);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .form-control {
+  border-color: rgba(255,255,255,0.5);
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: darkcyan;
+}
+
+.footer .footer-menu a {
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, .1);
+}
+
+.footer .footer-menu a:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: none;
+}
 
 
 /* search css start */

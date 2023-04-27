@@ -29,9 +29,14 @@
           <a href="" class="btn btn-success py-3 px-4 me-2"
             ><i class="fa fa-phone-alt me-2"></i>Make A Call</a
           >
-          <a href="" class="btn btn-dark py-3 px-4"
+          <button type="button" class="btn btn-dark py-3 px-5 " data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+          <i class="fa fa-calendar-alt me-2"></i>Get Appoinment
+        </button>
+
+          <!-- <a href="/bookappointment" class="btn btn-dark py-3 px-4"
             ><i class="fa fa-calendar-alt me-2"></i>Get Appoinment</a
-          >
+          > -->
         </div>
       </div>
     </div>
@@ -48,6 +53,9 @@
       class="bg-white rounded p-4"
       style="border: 1px dashed rgba(0, 185, 142, 0.3)"
     >
+    <% if(message.length > 0 ){ %>
+      <div class="alert alert-success "><%= message %></div>  
+      <% } %>
       <div class="mb-5 justify-content-center" style="max-width: 600px">
         <h1 class="mb-3">Broaker Agents</h1>
         <p>
@@ -124,7 +132,7 @@
               </div>
             </div>
             <div class="text-center p-4 mt-3">
-              <h5 class="fw-bold mb-0">Akash Gandhi</h5>
+              <h5 class="fw-bold mb-0">Anamika Gandhi</h5>
               <small>Alkapuri,Gwalior</small>
             </div>
           </div>
@@ -159,5 +167,54 @@
 </div>
 
 <!-- Team End -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h1 class="modal-title fs-5  text-white" id="exampleModalLabel">
+         Book An Appointment
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="/bookappointment/" method="post">
+          <div class="md-3">
+            <label for="">First Name</label>
+            <input type="text" name="firstname" class="form-control" />
+          </div>
+          <div class="md-3">
+            <label for="">Last Name</label>
+            <input type="text" name="lastname" class="form-control" />
+          </div>
+          <div class="md-3">
+            <label for="">Email</label>
+            <input type="email" name="email" class="form-control" />
+          </div>
+          <div class="md-3">
+            <label for="">Mobile No.</label>
+            <input type="number" name="mobile" class="form-control" />
+          </div>
+          <div class="md-3 ">
+            <label  class="mb-2">First Time Visit ?</label><br>
+            <input type="radio"  name="visit" value="Yes"/> Yes 
+            <br>  
+          <input type="radio"  name="visit" value="no"/> No <br/>      
+            
+          </div>
+          <div class="md-3 mt-1 mb-1">
+            <label class="mb-2">Select An Appointment Date</label>
+            <input type="date" name="date" class="form-control" />
+          </div>
+         
+          
+      <button type="submit" class="btn btn-dark mt-3">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+
 
 <%- include('./footer.ejs') %>

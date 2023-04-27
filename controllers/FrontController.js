@@ -21,8 +21,12 @@ class FrontController {
 
     res.render("property", { r: result });
   };
-  static contact = (req, res) => {
-    res.render("contact");
+  static contact = async (req, res) => {
+    try{
+    res.render("contact",{message: req.flash('Sucess')});
+    }catch(error){
+      console.log(error)
+    }
   };
 
   static addproperty = (req, res) => {
