@@ -279,15 +279,15 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
-  color: seagreen;
+  color: darkgray;
   border: 1px solid rgba(255,255,255,0.5);
   border-radius: 35px;
   transition: .3s;
 }
 
 .footer .btn.btn-social:hover {
-  color:rgb(222, 250, 234);
-  border-color: rgb(62, 203, 83);
+  color:green;
+  border-color: blueviolet;
 }
 
 .footer .btn.btn-link {
@@ -325,7 +325,7 @@ a{
 }
 
 .footer .copyright a {
-  color: darkcyan;
+  color: rgb(15, 198, 103);
 }
 
 .footer .footer-menu a {
