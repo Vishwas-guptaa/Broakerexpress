@@ -18,9 +18,9 @@ class Bookcontroller {
       await result.save();
       req.flash("Sucess", "Your Property Book Succesfully , Check Your mail");
       //////////////////////////////////////////////
-      this.sendEmail(property,clientEmail);
+      this.sendEmail(property, clientEmail);
       //console.log(result);
-      res.redirect('/details/'+id)
+      res.redirect("/details/" + id);
     } catch (error) {
       console.log(error);
     }
@@ -48,11 +48,10 @@ class Bookcontroller {
 
   static sendEmail = async (propertyName, email) => {
     // console.log("email sending")
-    //console.log("propertyName")
     // console.log(email)
 
     //connenct with the smtp server
-    let testAccount = await nodemailer.createTestAccount();
+
     let transporter = await nodemailer.createTransport({
       host: "smtp.gmail.com",
       port: 587,
@@ -63,14 +62,13 @@ class Bookcontroller {
       },
     });
     let info = await transporter.sendMail({
-      from: 'test@gmail.com', // sender address
+      from: "test@gmail.com", // sender address
       to: email, // list of receivers
       subject: "Property Book Succesfully", // Subject line
       text: "heelo", // plain text body
       html: `Your Property Book <b>${propertyName}</b>`, // html body
     });
     //console.log("Messge sent: %s", info.messageId);
-    
   };
 }
 module.exports = Bookcontroller;

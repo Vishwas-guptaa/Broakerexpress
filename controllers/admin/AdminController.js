@@ -84,9 +84,9 @@ class AdminController {
   static changepassword = async (req, res) => {
     try {
       //  console.log('heelo')
-      res.render("changepassword",{message:req.flash('error')});
+      res.render("changepassword", { message: req.flash("error") });
     } catch (error) {
-      console.log(error);   
+      console.log(error);
     }
   };
 
@@ -94,16 +94,16 @@ class AdminController {
     try {
       //console.log('hello');
       const { old_password, new_password, cpassword } = req.body;
-      // console.log(req.body)
+      //console.log(req.body);
       //const { _id } = req.admin;
       // console.log(name)
       // console.log(_id)
 
       if (old_password && new_password && cpassword) {
         const admin = await AdminModel.findById(req.admin._id);
-         //console.log(admin)
+        //console.log(admin)
         const ismatched = await bcrypt.compare(old_password, admin.password);
-       // const isPasswordMatched = await userModel.comparePassword(req.body.old_password);
+        // const isPasswordMatched = await userModel.comparePassword(req.body.old_password);
         if (!ismatched) {
           req.flash("error", "Old password is incorrect");
           res.redirect("/changepassword");
